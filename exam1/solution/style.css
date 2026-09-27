@@ -14,6 +14,19 @@ h1 { font-size: 1.5rem; margin: 0 0 8px; }
 .summary { margin: 0 0 16px; color: #4a5566; }
 .status, .error { color: #c0392b; }
 
+/* แจ้งเตือนแบบไม่ใช่ error เช่นตอนอ่านจากไฟล์เพราะไม่มี json-server */
+.notice {
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  border: 1px solid #e6d3a3;
+  border-radius: 8px;
+  background: #fdf6e3;
+  color: #7a5c14;
+  font-size: 0.9rem;
+}
+
+button[disabled] { opacity: 0.5; cursor: not-allowed; }
+
 .table-wrap { overflow-x: auto; background: #fff; border: 1px solid #d9dee6; border-radius: 8px; }
 table { width: 100%; border-collapse: collapse; }
 th, td { padding: 10px 12px; text-align: left; border-bottom: 1px solid #e6e9ef; white-space: nowrap; }

@@ -1,4 +1,24 @@
 const API = "http://localhost:3000/employees";
+const DB_FILE = "../db.json"; // ใช้ตอนไม่มี json-server
+
+// โหมดอ่านอย่างเดียว = ไม่มี json-server ให้ต่อ (เช่นตอนเอาขึ้นเว็บ static)
+let readOnly = false;
+
+// ลองต่อ json-server ก่อน ถ้าต่อไม่ได้ค่อยอ่านไฟล์ db.json ตรง ๆ
+// (ส่วนนี้เพิ่มมาเพื่อให้เปิดดูบนเว็บได้ ไม่ใช่สิ่งที่โจทย์ต้องการ)
+async function fetchEmployees() {
+  try {
+    const res = await fetch(API);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    return await res.json();
+  } catch {
+    const res = await fetch(DB_FILE);
+    if (!res.ok) throw new Error("HTTP " + res.status);
+    const data = await res.json();
+    readOnly = true;
+    return data.employees;
+  }
+}
 
 // เลือกสีแถบตามค่า Progress
 function levelOf(p) {
@@ -32,9 +52,13 @@ async function loadEmployees() {
   const status = document.getElementById("status");
 
   try {
-    const res = await fetch(API);
-    if (!res.ok) throw new Error("HTTP " + res.status);
-    const employees = await res.json();
+    const employees = await fetchEmployees();
+
+    if (readOnly) {
+      status.className = "notice";
+      status.textContent =
+        "โหมดอ่านอย่างเดียว: อ่านจากไฟล์ db.json เพราะไม่ได้เปิด json-server ปุ่มแก้ไขจะบันทึกไม่ได้";
+    }
 
     tbody.innerHTML = "";
     employees.forEach((emp) => {
@@ -63,6 +87,7 @@ async function loadEmployees() {
     const avg = employees.length ? total / employees.length : 0;
     document.getElementById("avg").textContent = avg.toFixed(1) + "%";
   } catch (err) {
+    status.className = "status";
     status.textContent =
       "โหลดข้อมูลไม่ได้ ตรวจว่าเปิด json-server ที่พอร์ต 3000 แล้วหรือยัง (" + err.message + ")";
   }
