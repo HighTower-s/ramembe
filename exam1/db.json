@@ -1,0 +1,86 @@
+{
+  "employees": [
+    {
+      "id": "1",
+      "FirstName": "Nancy",
+      "LastName": "Davolio",
+      "Gender": "Male",
+      "Position": "Sales Representative",
+      "Address": "507-20th Ave. E. Apt. 2A",
+      "Progress": 85
+    },
+    {
+      "id": "2",
+      "Gender": "Male",
+      "LastName": "Fuller",
+      "FirstName": "Andrew",
+      "Position": "Vice President",
+      "Address": "908 W. Capital Way",
+      "Progress": 100
+    },
+    {
+      "id": "3",
+      "Gender": "Female",
+      "LastName": "Leverling",
+      "FirstName": "Janet",
+      "Position": "Sales Representative",
+      "Address": "722 Moss Bay Blvd.",
+      "Progress": 62
+    },
+    {
+      "id": "4",
+      "Gender": "Female",
+      "LastName": "Peacock",
+      "FirstName": " Margaret",
+      "Position": "Sales Representative",
+      "Address": "4110 0 ld Redmond Rd.",
+      "Progress": 45
+    },
+    {
+      "id": "5",
+      "Gender": "Male",
+      "LastName": "Buchanan",
+      "FirstName": "Steven",
+      "Position": "Sales Manager",
+      "Address": "14 Garrett Hill",
+      "Progress": 78
+    },
+    {
+      "id": "6",
+      "Gender": "Male",
+      "LastName": "Suyama ",
+      "FirstName": "Michael ",
+      "Position": "Sales Representative",
+      "Address": "Coventry House Miner Rd.",
+      "Progress": 30
+    },
+    {
+      "id": "7",
+      "Gender": "Male",
+      "LastName": "King",
+      "FirstName": " Robert",
+      "Position": "Sales Representative",
+      "Address": "Edgeham Hollow Winchester Way",
+      "Progress": 91
+    },
+    {
+      "id": "8",
+      "Gender": "Female",
+      "LastName": "Callahan",
+      "FirstName": "Laura",
+      "Position": "Inside Sales Coordinator",
+      "Address": "4726-11th Ave. N.E.",
+      "Progress": 55
+    },
+    {
+      "id": "9",
+      "Gender": "Female",
+      "LastName": "Dodsworth",
+      "FirstName": " Anne",
+      "Position": "Sales Representative",
+      "Address": "7 Houndstooth Rd.",
+      "Progress": 15
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

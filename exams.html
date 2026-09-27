@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remembe</title>
+  <link rel="stylesheet" href="site.css">
+  <script src="hub.js"></script>
+</head>
+<body>
+  <nav class="nav">
+    <span class="brand">Remembe</span>
+    <div class="nav-links">
+      <a href="#theory">Theory</a>
+      <a href="#coding">Coding</a>
+    </div>
+    <div class="nav-right">
+      <span class="who" id="who"></span>
+      <button type="button" class="pill ghost" id="leave">ออก</button>
+    </div>
+  </nav>
+
+  <div class="wrap">
+    <header class="hero">
+      <span class="tag" id="greeting">ยินดีต้อนรับ</span>
+      <h1>ข้อสอบเก่า Web Programming ปีนี้</h1>
+      <p>แบ่งเป็นสองส่วน คือส่วนทฤษฎี 5 ข้อ และส่วนเขียนโปรแกรม 3 ข้อ ทุกข้อเรียบเรียงขึ้นใหม่จากความจำของรุ่นพี่ อาจไม่ตรงต้นฉบับทุกคำ ส่วนทฤษฎีให้โจทย์อย่างเดียว ไม่มีเฉลย ลองคิดเองก่อน</p>
+    </header>
+
+    <section id="theory">
+      <div class="section-head">
+        <span class="tag">ส่วนที่ 1</span>
+        <h2>Theory</h2>
+        <p>5 ข้อ ไม่มีเฉลย</p>
+      </div>
+
+      <ol class="theory-list">
+        <li class="q">
+          <span class="q-no">1</span>
+          <div class="q-body">ให้อธิบายหลักการของวิธีการในการส่งข้อมูลจาก Form ไปยัง Server แบบ GET และ POST ว่าเป็นอย่างไร รวมถึงให้อธิบายส่วนประกอบของชุดข้อมูลนั้น</div>
+        </li>
+        <li class="q">
+          <span class="q-no">2</span>
+          <div class="q-body">วาดรูป และอธิบาย Client-Server model</div>
+        </li>
+        <li class="q">
+          <span class="q-no">3</span>
+          <div class="q-body">JavaScript มีบทบาทหรือทำหน้าที่สำคัญอย่างไรต่อการพัฒนาเว็บไซต์ในฝั่ง client-side ให้อธิบาย</div>
+        </li>
+        <li class="q">
+          <span class="q-no">4</span>
+          <div class="q-body">DOM จะนำเสนอเอกสารในรูปแบบลำดับชั้นแบบ Tree ของ Object node ซึ่งประเภทของ node ใน Tree นั้นมีทั้งหมดกี่ประเภท ให้บอกถึงคุณลักษณะของ Node เหล่านั้น</div>
+        </li>
+        <li class="q">
+          <span class="q-no">5</span>
+          <div class="q-body">
+            Fundamental Techniques บอกและอธิบาย หรือ Three layers of Web design
+            <span class="note">รุ่นพี่จำไม่แน่ใจว่าข้อนี้ถามอันไหน อ่านเตรียมไว้ทั้งสองอย่าง</span>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <section id="coding">
+      <div class="section-head">
+        <span class="tag">ส่วนที่ 2</span>
+        <h2>Coding</h2>
+        <p>3 ข้อ แต่ละข้อมีโจทย์เต็มและเฉลยให้เทียบ</p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <span class="tag">ข้อ 1 · fetch + PUT</span>
+          <h3>ตารางพนักงาน + กราฟความสำเร็จ</h3>
+          <p>ดึงข้อมูลพนักงานจาก json-server มาแสดงเป็นตาราง พร้อมแถบกราฟตามค่า Progress และหน้าฟอร์มแก้ไขที่บันทึกกลับด้วย PUT</p>
+          <div class="actions">
+            <a class="pill" href="exam1/solution/index.html">ดูเฉลย</a>
+            <a class="pill ghost" href="problem.html?id=1">อ่านโจทย์</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">ข้อ 2 · DOM</span>
+          <h3>เลือกสาขาแล้วแสดงรายการสินค้า</h3>
+          <p>โหลด JSON ซ้อนสองชั้น สร้าง dropdown จากรหัสสาขา แล้ววาดตารางสินค้าพร้อมยอดรวมด้วยวิธี DOM ล้วน ห้ามใช้ innerHTML</p>
+          <div class="actions">
+            <a class="pill" href="exam2/solution/index.html">ดูเฉลย</a>
+            <a class="pill ghost" href="problem.html?id=2">อ่านโจทย์</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <span class="tag">ข้อ 3 · Responsive</span>
+          <h3>Grid รูปภาพตามขนาดหน้าจอ</h3>
+          <p>สร้างการ์ด 10 ใบด้วย DOM แล้วจัดเป็น grid ที่เปลี่ยนจำนวนคอลัมน์ตามความกว้างจอ 4 / 2 / 1 ด้วย media query</p>
+          <div class="actions">
+            <a class="pill" href="exam3/solution/index.html">ดูเฉลย</a>
+            <a class="pill ghost" href="problem.html?id=3">อ่านโจทย์</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <footer>ข้อ 1 ต้องเปิด json-server ก่อน: <code>npx json-server exam1/db.json --port 3000</code></footer>
+  </div>
+</body>
+</html>

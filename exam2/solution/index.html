@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Branch Orders</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>รายการสั่งซื้อของแต่ละสาขา</h1>
+
+    <label for="branch-select">เลือกรหัสสาขา</label>
+    <select id="branch-select">
+      <option value="">-- เลือกสาขา --</option>
+    </select>
+    <p id="status" class="status"></p>
+
+    <section id="detail" hidden>
+      <dl class="info">
+        <div><dt>ชื่อสาขา</dt><dd id="branchName"></dd></div>
+        <div><dt>ภาค</dt><dd id="region"></dd></div>
+        <div><dt>เมือง</dt><dd id="city"></dd></div>
+        <div><dt>เจ้าของ</dt><dd id="owner"></dd></div>
+      </dl>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>ลำดับ</th>
+              <th>ประเภท</th>
+              <th>ชื่อสินค้า</th>
+              <th class="num">ราคา</th>
+              <th class="num">จำนวน</th>
+              <th class="num">ราคารวม</th>
+            </tr>
+          </thead>
+          <tbody id="items"></tbody>
+          <tfoot id="total"></tfoot>
+        </table>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remembe</title>
+  <link rel="stylesheet" href="site.css">
+</head>
+<body>
+  <main class="gate">
+    <div class="gate-inner">
+      <span class="tag">ว่างมาก</span>
+
+      <h1>Remembe</h1>
+      <p class="lead">ที่นี่ไม่มีอะไร นอกจากสิ่งที่มี และสิ่งที่มีก็ยังไม่แน่ใจว่ามีอยู่จริงหรือเปล่า</p>
+
+      <p class="disclaimer">เว็บนี้สร้างขึ้นมาเพราะความว่างเปล่า โค้ดส่วนใหญ่ก็ก๊อปจาก Stack Overflow รันผ่านได้ก็ถือว่าเป็นปาฏิหาริย์แล้ว หลาย ๆ อย่างใช้ Claude gen มา ขี้เกียจอ่าน ดูเฉลยพอ</p>
+
+      <form class="gate-form" id="gate-form" novalidate>
+        <div class="field" id="field">
+          <input id="name" type="text" placeholder="พิมพ์ชื่อของคุณ" autocomplete="off" autofocus>
+          <span class="enter-hint">↵ Enter</span>
+        </div>
+        <p class="gate-note">พิมพ์ชื่อไปก็เท่านั้น ยังไม่ได้ต่อ Database</p>
+      </form>
+    </div>
+  </main>
+
+  <script src="gate.js"></script>
+</body>
+</html>

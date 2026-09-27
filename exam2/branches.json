@@ -1,0 +1,56 @@
+{
+  "company": "Siam Mart",
+  "branches": [
+    {
+      "id": "B001",
+      "branchName": "สาขา 1 สยาม",
+      "region": "ภาคกลาง",
+      "city": "กรุงเทพมหานคร",
+      "owner": "สมชาย ใจดี",
+      "items": [
+        { "type": "เครื่องดื่ม", "name": "กาแฟเย็น", "price": 45, "quantity": 12 },
+        { "type": "เครื่องดื่ม", "name": "ชาเขียวนม", "price": 40, "quantity": 8 },
+        { "type": "ขนม", "name": "ครัวซองต์", "price": 55, "quantity": 5 },
+        { "type": "อาหาร", "name": "แซนด์วิชทูน่า", "price": 65, "quantity": 4 }
+      ]
+    },
+    {
+      "id": "B002",
+      "branchName": "สาขา 2 นิมมาน",
+      "region": "ภาคเหนือ",
+      "city": "เชียงใหม่",
+      "owner": "มาลี ศรีสุข",
+      "items": [
+        { "type": "เครื่องดื่ม", "name": "โกโก้ร้อน", "price": 50, "quantity": 6 },
+        { "type": "ขนม", "name": "บราวนี่", "price": 45, "quantity": 10 },
+        { "type": "อาหาร", "name": "ข้าวซอยไก่", "price": 70, "quantity": 7 }
+      ]
+    },
+    {
+      "id": "B003",
+      "branchName": "สาขา 3 หาดใหญ่",
+      "region": "ภาคใต้",
+      "city": "สงขลา",
+      "owner": "อารีย์ ทองคำ",
+      "items": [
+        { "type": "เครื่องดื่ม", "name": "ชาชักเย็น", "price": 35, "quantity": 20 },
+        { "type": "อาหาร", "name": "โรตีไข่", "price": 30, "quantity": 15 },
+        { "type": "อาหาร", "name": "ไก่ทอดหาดใหญ่", "price": 60, "quantity": 9 },
+        { "type": "ขนม", "name": "ขนมจาก", "price": 25, "quantity": 12 },
+        { "type": "เครื่องดื่ม", "name": "น้ำมะพร้าว", "price": 40, "quantity": 6 }
+      ]
+    },
+    {
+      "id": "B004",
+      "branchName": "สาขา 4 ขอนแก่น",
+      "region": "ภาคตะวันออกเฉียงเหนือ",
+      "city": "ขอนแก่น",
+      "owner": "ประยุทธ แสงทอง",
+      "items": [
+        { "type": "อาหาร", "name": "ส้มตำไทย", "price": 50, "quantity": 11 },
+        { "type": "อาหาร", "name": "ไก่ย่าง", "price": 90, "quantity": 5 },
+        { "type": "เครื่องดื่ม", "name": "น้ำเก๊กฮวย", "price": 25, "quantity": 14 }
+      ]
+    }
+  ]
+}

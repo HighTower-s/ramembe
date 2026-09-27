@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Employee</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container narrow">
+    <h1>แก้ไขข้อมูลพนักงาน</h1>
+    <p id="status" class="status"></p>
+
+    <form id="edit-form" novalidate>
+      <label for="empId">ID</label>
+      <input id="empId" name="empId" readonly>
+
+      <label for="FirstName">ชื่อ</label>
+      <input id="FirstName" name="FirstName" required>
+
+      <label for="LastName">นามสกุล</label>
+      <input id="LastName" name="LastName" required>
+
+      <label for="Gender">เพศ</label>
+      <select id="Gender" name="Gender">
+        <option value="Male">Male</option>
+        <option value="Female">Female</option>
+      </select>
+
+      <label for="Position">ตำแหน่ง</label>
+      <input id="Position" name="Position" required>
+
+      <label for="Address">ที่อยู่</label>
+      <input id="Address" name="Address" required>
+
+      <label for="Progress">ความสำเร็จของงาน (%)</label>
+      <input id="Progress" name="Progress" type="number" min="0" max="100" required>
+
+      <p id="error" class="error"></p>
+
+      <div class="actions">
+        <button type="submit" class="btn">บันทึก</button>
+        <a href="index.html" class="btn secondary">ยกเลิก</a>
+      </div>
+    </form>
+  </main>
+
+  <script src="edit.js"></script>
+</body>
+</html>
